@@ -1,0 +1,307 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: white;
+}
+
+.header {
+    padding: 20px 40px;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  padding: 12px;
+  margin: 0;
+  color: #2c3e50;
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.menu-icon:hover {
+  background: rgba(255, 255, 255, 1);
+  border-color: #2c3e50;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="checkbox"]:checked ~ .menu-icon {
+  background: #2c3e50;
+  color: white;
+  border-color: #2c3e50;
+}
+
+.menu-links {
+  position: absolute;
+  display: none;
+  list-style: none;
+  padding: 20px 0;
+  top: 60px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  min-width: 180px;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+input[type="checkbox"]:checked ~ .menu-links {
+  display: block;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ham-link {
+    padding: 0;
+    margin: 0;
+}
+
+.ham-link a {
+    display: block;
+    padding: 14px 24px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ham-link:last-child a {
+    border-bottom: none;
+}
+
+.ham-link a:hover {
+    background: rgba(44, 62, 80, 0.05);
+    color: #1a252f;
+    padding-left: 28px;
+}
+
+.hamburger-menu {
+  position: relative;
+}
+
+.main {
+    background-color: #fdf7dd;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+p {
+    font-size: 25px;
+    text-align: center;
+}
+
+#quilt {
+    position: absolute;
+    height: auto;
+}
+
+.overlay-img {
+    position: absolute;
+    max-width: 200px;
+    height: auto;
+    z-index: 5;
+    border-radius: 8px;
+}
+.overlay-text {
+    position: absolute;
+    font-size: 32px;
+    z-index: 6;
+    background-color: sandybrown;
+}
+
+#rights1 {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+#rights2 {
+    position: absolute;
+    top: 940px;
+    left: 350px;
+}
+#rights3 {
+    position: absolute;
+    top: 830px;
+    left: 680px;
+}
+#rights4 {
+    position: absolute;
+    top: 180px;
+    left: 900px;
+}
+#rights5 {
+    position: absolute;
+    top: 500px;
+    left: 1000px;
+}
+#music1 {
+    position: absolute;
+    top: 590px;
+    left: 50px;
+}
+#music2 {
+    position: absolute;
+    top: 1000px;
+    left: 700px;
+}
+#music3 {
+    position: absolute;
+    top: 210px;
+    left: 600px;
+}
+#music4 {
+    position: absolute;
+    top: 980px;
+    left: 1200px;
+}
+#music5 {
+    position: absolute;
+    top: 180px;
+    left: 1200px;
+}
+#music7 {
+    position: absolute;
+    top: 600px;
+    left: 600px;
+}
+#nest {
+   position:absolute;
+   top: 900px;
+   left: 100px;
+}
+#birds1{
+   position:absolute;
+   top: 200px;
+   left: 300px;
+}
+#birds2{
+   position:absolute;
+   top :500px ;
+   left :400px ;
+}
+#climate1{
+   position:absolute;
+   top :700px ;
+   left :380px ;
+}
+#climate2{
+   position:absolute;
+   top :435px ;
+   left :700px ;
+}
+#climate3{
+   position:absolute;
+   top :600px ;
+   left :1300px ;
+}
+#climate4{
+   position:absolute;
+   top :700px ;
+   left :990px ;
+}
+#text1{
+   position:absolute;
+   top :50px ;
+   left :50px ;
+   transform: rotate(30deg)
+}
+#text2{
+   position:absolute;
+   top :1100px ;
+   left :1100px ;
+   transform: rotate(-5deg)
+}
+#text3{
+   position:absolute;
+   top :400px ;
+   left :1100px ;
+   transform: rotate(310deg)
+}
+
+#text4{
+   position:absolute;
+   top :800px ;
+   left :200px ;
+   transform: rotate(680px)
+}
+#text5{
+   position:absolute;
+   top :450px ;
+   left :200px ;
+   transform: rotate(30deg)
+}
+#text6{
+   position:absolute;
+   top :800px ;
+   left :200px ;
+   transform: rotate(30deg)
+}
+#text7{
+   position:absolute;
+   top :800px ;
+   left :200px ;
+   transform: rotate(30deg)
+}
+#text8{
+   position:absolute;
+   top :800px ;
+   left :200px ;
+   transform: rotate(30deg)
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description"/>
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="./wheatlystyle.css" type="text/css" />
+    <style type="text/css">.body { width: auto; }</style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const overlayToggle = document.getElementById('overlay-toggle');
+        const overlays = document.querySelectorAll('.overlay-arrow, .overlay-highlight, .overlay-text-box');
+        const overlayLinks = document.querySelectorAll('.overlay-link');
+        
+        if (!overlayToggle) return;
+
+        overlayToggle.addEventListener('change', function() {
+          const isOn = this.checked;
+          
+          // Toggle overlay visibility
+          overlays.forEach(function(overlay) {
+            if (isOn) {
+              overlay.classList.add('visible');
+            } else {
+              overlay.classList.remove('visible');
+            }
+          });
+          
+          // Toggle overlay links
+          overlayLinks.forEach(function(link) {
+            if (isOn) {
+              link.style.pointerEvents = 'auto';
+              link.style.color = '#1a0dab';
+              link.style.borderBottomColor = '#1a0dab';
+              link.style.textDecoration = 'underline';
+            } else {
+              link.style.pointerEvents = 'none';
+              link.style.color = 'inherit';
+              link.style.borderBottomColor = 'transparent';
+              link.style.textDecoration = 'none';
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Wheatley</h1>
+      <nav class="hamburger-menu">
+        <input type="checkbox" id="menu-toggle"/>
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu-links">
+          <li class="ham-link"><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+        <div class="overlay-toggle-container">
+            <input type="checkbox" id="overlay-toggle"/>
+            <label for="overlay-toggle" class="overlay-toggle-label">🔍</label>
+        </div>
+        <div class="title-container">
+            <h3 id="title">On Being Brought from Africa to America</h3>
+            <div class="overlay-arrow overlay-1">
+                <div class="overlay-text">not taken</div>
+                <div class="arrow-container">
+                    <div class="arrow-line"></div>
+                    <div class="arrow-point"></div>
+                </div>
+            </div>
+            <div class="overlay-arrow overlay-2">
+                <div class="overlay-text">passive; no subject</div>
+                <div class="arrow-container">
+                    <div class="arrow-line"></div>
+                    <div class="arrow-point"></div>
+                </div>
+            </div>
+            <div class="overlay-highlight" id="on"></div>
+            <div class="overlay-highlight" id="brought"></div>
+        </div>
+        <p id="poem">'Twas mercy brought me from my Pagan land,<br>
+            Taught my benighted soul to understand<br>
+            That there's a God, that there's a Saviour too:<br>
+            Once I redemption neither sought nor knew.<br>
+            Some view our sable race with scornful eye,<br>
+            "Their colour is a diabolic die."<br>
+            Remember, Christians, Negros, black as <a class="overlay-link" href="https://en.wikipedia.org/wiki/Cain" target="_blank">Cain</a>,<br>
+            May be refin'd, and join th' angelic train.</p>
+
+            <div class="overlay-arrow overlay-3">
+                <div class="overlay-text">Ommission</div>
+                <div class="arrow-container">
+                    <div class="arrow-line"></div>
+                    <div class="arrow-point"></div>
+                </div>
+            </div>
+            <div class="overlay-arrow overlay-4">
+                <div class="arrow-container">
+                    <div class="arrow-line"></div>
+                    <div class="arrow-point"></div>
+                </div>
+            </div>
+            <div class="overlay-text-box">
+                <h2>Wikipedia: Cain</h2>
+                <p>a biblical figure in the Book of Genesis within Abrahamic religions. He is the elder brother of Abel, and the firstborn son of Adam and Eve, the first couple within the Bible. He was a farmer who gave an offering of his crops to God. However, God was not pleased and favored Abel's offering over Cain's. Out of jealousy, Cain killed his brother, for which he was punished by God with the curse and mark of Cain (blackness).</p>
+            </div>
+        </div>
+  </body>
+</html>
