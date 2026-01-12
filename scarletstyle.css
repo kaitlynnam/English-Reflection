@@ -261,7 +261,7 @@ input[type="checkbox"]:checked ~ .menu-links {
 
 .main {
     width: 100vw;
-    height: 9700px;
+    height: 10000px;
     background-color: black;
     overflow: hidden;
 }
@@ -401,7 +401,7 @@ make hester and pearl brighter to show how they are public figures and others da
     position: absolute;
     height: 277px;
     width: 400px;
-    top: 7000px;
+    top: 8000px;
     right: 100px;
     z-index: 3;
 }
@@ -410,7 +410,26 @@ make hester and pearl brighter to show how they are public figures and others da
     position: absolute;
     height: 450px;
     width: 387px;
-    top: 5000px;
+    top: 6000px;
     left: 100px;
     z-index: 4;
+}
+
+#candd {
+    position: absolute;
+    height: 560px;
+    width: 600px;
+    top: 5000px;
+    left: 50%;
+    z-index: 4;
+}
+#handp {
+    position: absolute;
+    height: 700px;
+    width: 750px;
+    left: 200px;
+    bottom: 150px;
+    z-index: 12;
+    opacity: 1 !important;
+    animation: none !important;
 }

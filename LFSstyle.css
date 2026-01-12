@@ -21,6 +21,8 @@ html, body {
     align-items: center;
     background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10000;
 }
 
 .header h1 {
@@ -77,7 +79,7 @@ input[type="checkbox"]:checked ~ .menu-icon {
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   min-width: 180px;
-  z-index: 1000;
+  z-index: 10001;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -156,6 +158,7 @@ p {
 #quilt {
     position: absolute;
     height: auto;
+    z-index: -1;
 }
 
 .overlay-img {
@@ -169,7 +172,6 @@ p {
     position: absolute;
     font-size: 32px;
     z-index: 6;
-    background-color: sandybrown;
 }
 
 #rights1 {
@@ -264,14 +266,14 @@ p {
 }
 #text1{
    position:absolute;
-   top :50px ;
-   left :50px ;
+   top: 400px ;
+   left: 520px ;
    transform: rotate(30deg)
 }
 #text2{
    position:absolute;
    top :1100px ;
-   left :1100px ;
+   left :1000px ;
    transform: rotate(-5deg)
 }
 #text3{
@@ -283,32 +285,80 @@ p {
 
 #text4{
    position:absolute;
-   top :800px ;
-   left :200px ;
-   transform: rotate(680px)
+   top :970px ;
+   left :280px ;
+   transform: rotate(320deg)
 }
 #text5{
    position:absolute;
-   top :450px ;
-   left :200px ;
-   transform: rotate(30deg)
+   top :470px ;
+   left :100px ;
+   transform: rotate(50deg)
 }
 #text6{
    position:absolute;
-   top :800px ;
-   left :200px ;
+   top :600px ;
+   left :1210px ;
    transform: rotate(30deg)
 }
 #text7{
    position:absolute;
    top :800px ;
-   left :200px ;
+   left :700px ;
    transform: rotate(30deg)
 }
 #text8{
     position:absolute;
-    top :800px ;
-    left :200px ;
+    top :980px ;
+    left :570px ;
+    transform: rotate(350deg)
+}
+#text9{
+   position:absolute;
+   top :500px ;
+   left :280px ;
+   transform: rotate(330deg)
+}
+#text10{
+   position:absolute;
+   top :650px ;
+   left :820px ;
+   transform: rotate(340deg)
+}
+#text11{
+   position:absolute;
+   top :450px ;
+   right : 70px ;
+   transform: rotate(50deg)
+}
+#text12{
+    position:absolute;
+    top :960px ;
+    left :950px ;
+    transform: rotate(30deg)
+}
+#text13{
+   position:absolute;
+   top :370px ;
+   left :850px ;
+   transform: rotate(330deg)
+}
+#text14{
+   position:absolute;
+   top :850px ;
+   left :1200px ;
+   transform: rotate(55deg)
+}
+#text15{
+   position:absolute;
+   top :650px ;
+   left : 490px ;
+   transform: rotate(320deg)
+}
+#text16{
+    position:absolute;
+    top :540px ;
+    left :900px ;
     transform: rotate(30deg)
 }
 
@@ -325,4 +375,29 @@ p {
 #bush {
     top: 590px;
     left: 20px;
+}
+
+.red {
+    background-color: #fb3f3f;
+}
+.orange {
+    background-color: sandybrown;
+}
+.yellow {
+    background-color: rgb(255, 255, 109);
+}
+.green {
+    background-color: rgb(0, 169, 0);
+}
+.blue {
+    background-color: rgb(61, 61, 255);
+}
+.purple {
+    background-color: rgb(164, 0, 164);
+}
+.pink {
+    background-color: rgb(255, 159, 175);
+}
+.magenta {
+    background-color: magenta;
 }

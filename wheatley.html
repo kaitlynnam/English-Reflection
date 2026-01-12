@@ -12,7 +12,7 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const overlayToggle = document.getElementById('overlay-toggle');
-        const overlays = document.querySelectorAll('.overlay-arrow, .overlay-highlight, .overlay-text-box');
+        const overlays = document.querySelectorAll('.overlay-arrow, .overlay-highlight, .overlay-text-box, .overlay-circle, .overlay-text-5, .overlay-underline');
         const overlayLinks = document.querySelectorAll('.overlay-link');
         
         if (!overlayToggle) return;
@@ -61,7 +61,7 @@
     <div class="main">
         <div class="overlay-toggle-container">
             <input type="checkbox" id="overlay-toggle"/>
-            <label for="overlay-toggle" class="overlay-toggle-label">🔍</label>
+            <label for="overlay-toggle" class="overlay-toggle-label">Investigate</label>
         </div>
         <div class="title-container">
             <h3 id="title">On Being Brought from Africa to America</h3>
@@ -81,6 +81,12 @@
             </div>
             <div class="overlay-highlight" id="on"></div>
             <div class="overlay-highlight" id="brought"></div>
+            <div class="overlay-highlight" id="highlight-1"></div>
+            <div class="overlay-highlight" id="highlight-2"></div>
+            <div class="overlay-highlight" id="highlight-3"></div>
+            <div class="overlay-highlight" id="highlight-4"></div>
+            <div class="overlay-highlight" id="highlight-5"></div>
+            <div class="overlay-highlight" id="highlight-6"></div>
         </div>
         <p id="poem">'Twas mercy brought me from my Pagan land,<br>
             Taught my benighted soul to understand<br>
@@ -89,10 +95,10 @@
             Some view our sable race with scornful eye,<br>
             "Their colour is a diabolic die."<br>
             Remember, Christians, Negros, black as <a class="overlay-link" href="https://en.wikipedia.org/wiki/Cain" target="_blank">Cain</a>,<br>
-            May be refin'd, and join th' angelic train.</p>
+            May be <u class="overlay-underline">refin'd,</u> and join th' angelic train.</p>
 
             <div class="overlay-arrow overlay-3">
-                <div class="overlay-text">Ommission</div>
+                <div class="overlay-text"><u>Ommission</u> <br> Avoids blaming any party, <br> seems like it just happened</div>
                 <div class="arrow-container">
                     <div class="arrow-line"></div>
                     <div class="arrow-point"></div>
@@ -107,6 +113,31 @@
             <div class="overlay-text-box">
                 <h2>Wikipedia: Cain</h2>
                 <p>a biblical figure in the Book of Genesis within Abrahamic religions. He is the elder brother of Abel, and the firstborn son of Adam and Eve, the first couple within the Bible. He was a farmer who gave an offering of his crops to God. However, God was not pleased and favored Abel's offering over Cain's. Out of jealousy, Cain killed his brother, for which he was punished by God with the curse and mark of Cain (blackness).</p>
+            </div>
+            <div class="overlay-circle"></div>
+            <div class="overlay-arrow overlay-5">
+                <div class="arrow-container">
+                    <div class="arrow-line"></div>
+                    <div class="arrow-point"></div>
+                </div>
+            </div>
+            <div class="overlay-text-5">
+                <h2>Asking:</h2>
+                <p>"My skin might be black as Cain; However, your sould is as black as Cain. Therefore, who needs Jesus (saving, refining) more?"</p>
+            </div>
+            <div class="overlay-arrow overlay-6">
+                <div class="overlay-text">Cane --> sugarcane --> <u>refinery</u></div>
+                <div class="arrow-container">
+                    <div class="arrow-line"></div>
+                    <div class="arrow-point"></div>
+                </div>
+            </div>
+            <div class="overlay-arrow overlay-7">
+                <div class="overlay-text"> - dice --> <u>luck</u> <br> - dye <br> - death</div>
+                <div class="arrow-container">
+                    <div class="arrow-line"></div>
+                    <div class="arrow-point"></div>
+                </div>
             </div>
         </div>
   </body>

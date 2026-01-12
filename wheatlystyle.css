@@ -169,18 +169,18 @@ p {
 
 .overlay-toggle-label {
     cursor: pointer;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #f0f0f0;
     border: 2px solid #333;
-    border-radius: 50%;
-    font-size: 24px;
+    border-radius: 25px;
+    font-size: 16px;
     user-select: none;
     transition: all 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
+    min-width: 120px;
+    height: 40px;
     line-height: 1;
 }
 
@@ -332,7 +332,7 @@ p {
 
 /* Third overlay: "Ommission" - positioned under the passive */
 .overlay-3 {
-    top: 200px;
+    top: 120px;
     left: 70px;
     display: flex;
     align-items: center;
@@ -384,9 +384,49 @@ p {
     height: 35px;
 }
 
+#highlight-1 {
+    top: 70px;
+    left: 570px;
+    width: 100px;
+    height: 30px;
+}
+
+#highlight-2 {
+    top: 70px;
+    left: 870px;
+    width: 100px;
+    height: 30px;
+}
+
+#highlight-3 {
+    top: 275px;
+    left: 820px;
+    width: 150px;
+    height: 30px;
+}
+
+#highlight-4 {
+    top: 130px;
+    left: 640px;
+    width: 100px;
+    height: 30px;
+}
+#highlight-5 {
+    top: 130px;
+    left: 850px;
+    width: 100px;
+    height: 30px;
+}
+#highlight-6 {
+    top: 210px;
+    left: 780px;
+    width: 120px;
+    height: 30px;
+}
+
 /* Fourth overlay pointing to text box */
 .overlay-4 {
-    top: 520px;
+    top: 420px;
     right: 370px;
     display: flex;
     align-items: center;
@@ -424,7 +464,7 @@ p {
 .overlay-text-box {
     display: none;
     position: absolute;
-    top: 535px;
+    top: 450px;
     right: 10px;
     width: 300px;
     min-height: 150px;
@@ -453,4 +493,185 @@ p {
     line-height: 2.4;
     color: #333;
     text-align: left;
+}
+
+/* Underline class */
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+/* Overlay underline class - shows/hides with toggle */
+.overlay-underline {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.overlay-underline.visible {
+    border-bottom: 2px solid #333;
+    text-decoration: none;
+}
+
+/* Circle element */
+.overlay-circle {
+    display: none;
+    position: absolute;
+    border-radius: 75%;
+    border: 2px solid #333;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 5;
+    pointer-events: none;
+    /* Position it here - example values */
+    top: 400px;
+    left: 610px;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay-circle.visible {
+    display: block;
+}
+
+/* Another overlay text box */
+.overlay-text-5 {
+    display: none;
+    position: absolute;
+    top: 450px;
+    left: 10px;
+    width: 300px;
+    min-height: 150px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.overlay-text-5.visible {
+    display: block;
+}
+
+.overlay-text-5 p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
+}
+
+.overlay-text-5 h2 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 2.4;
+    color: #333;
+    text-align: left;
+}
+
+/* Arrow pointing to overlay-text-5 */
+.overlay-5 {
+    top: 440px;
+    left: 550px;
+    display: flex;
+    align-items: center;
+}
+
+.overlay-5 .arrow-container {
+    position: relative;
+    display: inline-block;
+    transform: rotate(170deg);
+    transform-origin: left center;
+}
+
+.overlay-5 .arrow-line {
+    width: 150px;
+    height: 2px;
+    background-color: #333;
+    position: relative;
+}
+
+.overlay-5 .arrow-point {
+    border-width: 6px 0 6px 10px;
+    border-color: transparent transparent transparent #333;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Sixth overlay: arrow with text (no box) */
+.overlay-6 {
+    top: 400px;
+    right: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.overlay-6 .overlay-text {
+    position: relative;
+    margin-right: 10px;
+    left: 350px;
+}
+
+.overlay-6 .arrow-container {
+    position: relative;
+    display: inline-block;
+    transform: rotate(0deg);
+    transform-origin: left center;
+}
+
+.overlay-6 .arrow-line {
+    width: 100px;
+    height: 2px;
+    background-color: #333;
+    position: relative;
+}
+
+.overlay-6 .arrow-point {
+    border-width: 6px 0 6px 10px;
+    border-color: transparent transparent transparent #333;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Seventh overlay: arrow with text (no box) */
+.overlay-7 {
+    top: 345px;
+    right: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.overlay-7 .overlay-text {
+    position: relative;
+    margin-right: 10px;
+    left: 250px;
+    top: -50px;
+}
+
+.overlay-7 .arrow-container {
+    position: relative;
+    display: inline-block;
+    transform: rotate(340deg);
+    transform-origin: left center;
+}
+
+.overlay-7 .arrow-line {
+    width: 100px;
+    height: 2px;
+    background-color: #333;
+    position: relative;
+}
+
+.overlay-7 .arrow-point {
+    border-width: 6px 0 6px 10px;
+    border-color: transparent transparent transparent #333;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
