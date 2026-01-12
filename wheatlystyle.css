@@ -131,7 +131,7 @@ input[type="checkbox"]:checked ~ .menu-links {
 
 .main {
     width: 100vw;
-    height: 1000vh;
+    height: 105vh;
     background-color: #fdf7dd;
     overflow: hidden;
     justify-content: center;
