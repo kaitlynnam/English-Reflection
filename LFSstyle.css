@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -300,8 +306,23 @@ p {
    transform: rotate(30deg)
 }
 #text8{
-   position:absolute;
-   top :800px ;
-   left :200px ;
-   transform: rotate(30deg)
+    position:absolute;
+    top :800px ;
+    left :200px ;
+    transform: rotate(30deg)
+}
+
+.overlay-song,
+#bush {
+    position: absolute;
+    max-width: 350px;
+    height: 250px;
+    z-index: 10;
+    border-radius: 12px;
+    
+}
+
+#bush {
+    top: 590px;
+    left: 20px;
 }
